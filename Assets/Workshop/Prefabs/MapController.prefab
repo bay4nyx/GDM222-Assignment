@@ -149,8 +149,9 @@ MonoBehaviour:
   itemPotionCount: 5
   enemyCount: 5
   EnemysOnMap: []
-  playerScript: {fileID: 0}
-  exitScript: {fileID: 0}
+  playerScript: {fileID: 5615206909734415387, guid: 4c033ef69eb269849bab9de975c465ed, type: 3}
+  exitScript: {fileID: 8054141579052691624, guid: 66e92acc836da4f41bdc3eb615f7c97b, type: 3}
+  wallScript: {fileID: -8458849319095951193, guid: a0e1cbb2ed4ebe2438ddc619ee2fef83, type: 3}
   empty: 
   demonWall: demonWall
   potion: potion

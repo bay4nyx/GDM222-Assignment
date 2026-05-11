@@ -1,4 +1,4 @@
-namespace Assignment
+namespace Assignment01
 {
     public class AssignmentConfig
     {
@@ -25,7 +25,7 @@ namespace Assignment
         /// </summary> 
         public static string[] AssignmentTestcaseFiles = new string[]
         {
-            "Assets/Scripts/Workspace/Assignment/Assignment_Testcase.cs"
+            "Assets/Scripts/Workspace/Assignment01/Assignment_Testcase.cs"
         };
 
         /// <summary>

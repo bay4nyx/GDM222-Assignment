@@ -7,7 +7,7 @@ using UnityEngine.TestTools;
 using AssignmentSystem.Services;
 using System;
 
-namespace Assignment
+namespace Assignment01
 {
     public class Assignment_Testcase
     {
@@ -318,7 +318,7 @@ Mark VII";
         }
 
         [Category("Assignment")]
-        [TestCase(new string[] { "สวัสดีครับ", "คุณเป็นอย่างไรบ้าง", "มีอะไรให้ช่วยไหม" }, 0, TestName = "AS08_RandomPickingDialogue_ThaiDialogues", Description = "Random dialogue selection with Thai text using seed 42")]
+        [TestCase(new string[] { "ÊÇÑÊ´Õ¤ÃÑº", "¤Ø³à»ç¹ÍÂèÒ§äÃºéÒ§", "ÁÕÍÐäÃãËéªèÇÂäËÁ" }, 0, TestName = "AS08_RandomPickingDialogue_ThaiDialogues", Description = "Random dialogue selection with Thai text using seed 42")]
         [TestCase(new string[] { "Hello there!", "How are you?", "What can I do for you?" }, 0, TestName = "AS08_RandomPickingDialogue_EnglishDialogues", Description = "Random dialogue selection with English text")]
         [TestCase(new string[] { "Welcome!" }, 0, TestName = "AS08_RandomPickingDialogue_SingleDialogue", Description = "Random dialogue selection with only 1 dialogue")]
         [TestCase(new string[] { "Good morning", "Good afternoon", "Good evening", "Good night", "See you later" }, 0, TestName = "AS08_RandomPickingDialogue_FiveDialogues", Description = "Random dialogue selection with 5 dialogues using seed 1")]
@@ -348,16 +348,16 @@ Mark VII";
         }
 
         [Category("Assignment")]
-        [TestCase(0, "ผลรวมของ n จาก 0 ถึง ${n} คือ ${sum}", TestName = "AS10_FindSummationFromOneToNUsingWhileLoop_Zero", Description = "Summation from 0 to 0")]
-        [TestCase(1, "ผลรวมของ n จาก 0 ถึง ${n} คือ ${sum}", TestName = "AS10_FindSummationFromOneToNUsingWhileLoop_One", Description = "Summation from 0 to 1")]
-        [TestCase(5, "ผลรวมของ n จาก 0 ถึง ${n} คือ ${sum}", TestName = "AS10_FindSummationFromOneToNUsingWhileLoop_Five", Description = "Summation from 0 to 5 should be 15")]
-        [TestCase(10, "ผลรวมของ n จาก 0 ถึง ${n} คือ ${sum}", TestName = "AS10_FindSummationFromOneToNUsingWhileLoop_Ten", Description = "Summation from 0 to 10 should be 55")]
-        [TestCase(100, "ผลรวมของ n จาก 0 ถึง ${n} คือ ${sum}", TestName = "AS10_FindSummationFromOneToNUsingWhileLoop_Hundred", Description = "Summation from 0 to 100 should be 5050")]
+        [TestCase(0, "¼ÅÃÇÁ¢Í§ n ¨Ò¡ 0 ¶Ö§ ${n} ¤×Í ${sum}", TestName = "AS10_FindSummationFromOneToNUsingWhileLoop_Zero", Description = "Summation from 0 to 0")]
+        [TestCase(1, "¼ÅÃÇÁ¢Í§ n ¨Ò¡ 0 ¶Ö§ ${n} ¤×Í ${sum}", TestName = "AS10_FindSummationFromOneToNUsingWhileLoop_One", Description = "Summation from 0 to 1")]
+        [TestCase(5, "¼ÅÃÇÁ¢Í§ n ¨Ò¡ 0 ¶Ö§ ${n} ¤×Í ${sum}", TestName = "AS10_FindSummationFromOneToNUsingWhileLoop_Five", Description = "Summation from 0 to 5 should be 15")]
+        [TestCase(10, "¼ÅÃÇÁ¢Í§ n ¨Ò¡ 0 ¶Ö§ ${n} ¤×Í ${sum}", TestName = "AS10_FindSummationFromOneToNUsingWhileLoop_Ten", Description = "Summation from 0 to 10 should be 55")]
+        [TestCase(100, "¼ÅÃÇÁ¢Í§ n ¨Ò¡ 0 ¶Ö§ ${n} ¤×Í ${sum}", TestName = "AS10_FindSummationFromOneToNUsingWhileLoop_Hundred", Description = "Summation from 0 to 100 should be 5050")]
         public void Test_AS10_FindSummationFromOneToNUsingWhileLoop_AllCases(int n, string expectedTemplate)
         {
             // Calculate expected sum: sum = 0 + 1 + 2 + ... + n = n*(n+1)/2
             int expectedSum = n * (n + 1) / 2;
-            string expected = $"ผลรวมของ n จาก 0 ถึง {n} คือ {expectedSum}";
+            string expected = $"¼ÅÃÇÁ¢Í§ n ¨Ò¡ 0 ¶Ö§ {n} ¤×Í {expectedSum}";
 
             // Act
             assignment.AS10_FindSummationFromZeroToNUsingWhileLoop(n);
